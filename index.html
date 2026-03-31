@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Networking Tools</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="assets/styles/net-tools.css">
+    </head>
+    <body>
+        <div class="column" id="left">
+            <div id="ip-wrapper">
+                <span>IP Address</span>
+                <div class="input-wrapper">
+                    <div class="octet-wrapper">
+                        <input type="number" id="ip-1" min="0" max="255" minlength="1" maxlength="3" value="0"></input>
+                        <span class="octet" id="ip-octet-1">0</span>
+                    </div>
+                    <span class="delimiter">.</span>
+                    <div class="octet-wrapper">
+                        <input type="number" id="ip-2" min="0" max="255" minlength="1" maxlength="3" value="0"></input>
+                        <span class="octet" id="ip-octet-2">0</span>
+                    </div>
+                    <span class="delimiter">.</span>
+                    <div class="octet-wrapper">
+                        <input type="number" id="ip-3" min="0" max="255" minlength="1" maxlength="3" value="0"></input>
+                        <span class="octet" id="ip-octet-3">0</span>
+                    </div>
+                    <span class="delimiter">.</span>
+                    <div class="octet-wrapper">
+                        <input type="number" id="ip-4" min="0" max="255" minlength="1" maxlength="3" value="0"></input>
+                        <span class="octet" id="ip-octet-4">0</span>
+                    </div>
+                    <span>/</span>
+                    <span id="subnet-value">24</span>
+                </div>
+            </div>
+            <div id="subnet-wrapper">
+                <span>Subnet Mask</span>
+                <div class="input-wrapper">
+                    <div class="octet-wrapper">
+                        <input type="number" id="subnet-1" min="0" max="255" minlength="1" maxlength="3" value="0"></input>
+                        <span class="octet" id="subnet-octet-1">0</span>
+                    </div>
+                    <span class="delimiter">.</span>
+                    <div class="octet-wrapper">
+                        <input type="number" id="subnet-2" min="0" max="255" minlength="1" maxlength="3" value="0"></input>
+                        <span class="octet" id="subnet-octet-2">0</span>
+                    </div>
+                    <span class="delimiter">.</span>
+                    <div class="octet-wrapper">
+                        <input type="number" id="subnet-3" min="0" max="255" minlength="1" maxlength="3" value="0"></input>
+                        <span class="octet" id="subnet-octet-3">0</span>
+                    </div>
+                    <span class="delimiter">.</span>
+                    <div class="octet-wrapper">
+                        <input type="number" id="subnet-4" min="0" max="255" minlength="1" maxlength="3" value="0"></input>
+                        <span class="octet" id="subnet-octet-4">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column" id="right"></div>
+    </body>
+    <script src="assets/scripts/net-tools.js"></script>
+</html>
