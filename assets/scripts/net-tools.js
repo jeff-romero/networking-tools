@@ -4,11 +4,25 @@ MAC_GENERIC = "00:00:00:00:00:00"
 DYNAMIC_MAC = "DYNAMIC"
 STATIC_MAC = "STATIC"
 
+/**
+ * 
+ */
+
 
 class Host {
     constructor(ip=IP_GENERIC, mac=MAC_GENERIC) {
         this.__ip = ip;
         this.__mac = mac;
+    }
+
+    sendBroadcastFrame() {
+        
+    }
+
+    arp() {
+        /**
+         * 
+         */
     }
 }
 
@@ -33,7 +47,7 @@ class MacEntry {
 }
 
 
-class Switch {
+class Switch extends Host {
     /**
      * switches use and maintain a mac address table
      * switches perform three actions:
@@ -49,6 +63,7 @@ class Switch {
      */
     static MAX_PORTS = 48;
     constructor() {
+        super();
         this.__ports = [];
         this.__macTable = [];
 
